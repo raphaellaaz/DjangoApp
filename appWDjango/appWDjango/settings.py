@@ -54,7 +54,7 @@ ROOT_URLCONF = 'appWDjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['appWDjango/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
