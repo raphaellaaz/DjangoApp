@@ -8,7 +8,12 @@
 </head>
 <body>
     <h2>Hola este es un template definido paara uso dinamico</h2>
-    <h3>HOla {{name}}</h3>
+    <h3>Hola {{name}}</h3>
     <p>Categoria: {{categories}}</p>
+    <ul>
+        {% for categ in categories%}
+        <li>{{categ}}</li>
+        {% endfor%}
+    </ul>
 </body>
 </html>
