@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/', views.saludo),
-    path('dinamico/<str:name>', views.dinamico)
+    path('dinamico/<str:name>', views.dinamico),
+    path('estatico/',views.estatico)
 ]
