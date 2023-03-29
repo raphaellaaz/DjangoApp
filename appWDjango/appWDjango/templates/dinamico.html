@@ -11,9 +11,14 @@
     <h3>Hola {{name}}</h3>
     <p>Categoria: {{categories}}</p>
     <ul>
+        {#Comentario python#}
+        {% comment %}
+            Comentario Multinlinea python dentro de html
+        {% endcomment%}
         {% for categ in categories%}
-        <li>{{categ}}</li>
+        <li>{{categ|upper}}</li>
         {% endfor%}
+        <h4>Toal de Categorias: {{categories|length}}</h4>
     </ul>
 </body>
 </html>
