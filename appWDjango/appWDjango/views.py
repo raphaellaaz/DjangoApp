@@ -10,3 +10,9 @@ def dinamico(request, name):
 
 def estatico(request):
     return render(request, 'estatico.html', {})
+
+def home(request):
+    return render(request,'home.html', {})
+
+def login(request):
+    return render(request, 'login.html', {})

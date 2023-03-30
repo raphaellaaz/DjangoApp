@@ -21,5 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/', views.saludo),
     path('dinamico/<str:name>', views.dinamico),
-    path('estatico/',views.estatico)
+    path('estatico/',views.estatico),
+    path('', views.home),
+    path('login/', views.login, name='login'),
+
 ]
